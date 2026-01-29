@@ -1,9 +1,8 @@
-huggingface_hub
-langchain
-langchain-huggingface
 streamlit
+pandas
 python-dotenv
+langchain-huggingface
+langchain-core
 PyPDF2
-
 
 -e .

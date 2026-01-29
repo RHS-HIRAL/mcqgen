@@ -13,7 +13,7 @@ load_dotenv()
 model_id = os.getenv("model_id")
 logging.info("Streamlit App Started. Environment variables loaded in StreamlitAPP.py.")
 
-file_path = r"C:\Hiral\Projects\python randoms\GenAI_Practice\project1\Response.json"
+file_path = r"Response.json"
 try:
     with open(file_path, "r") as file:
         response_json = file.read()
