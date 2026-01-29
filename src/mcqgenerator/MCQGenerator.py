@@ -15,20 +15,27 @@ from langchain_core.callbacks import get_usage_metadata_callback
 
 # Load environment variables from the .env file
 load_dotenv()
+logging.info("Environment variables loaded in MCQGenerator.")
 
 # Access the env variables
 key = os.getenv("HF_API_KEY")
 
 # Defining the models we might use
-model_id = "Qwen/Qwen2.5-72B-Instruct"
-alt_model_id = "mistralai/Mistral-7B-Instruct-v0.3"
+model_id = os.getenv("model_id")
 
-# Client
-llm_client = HuggingFaceEndpoint(
-    repo_id=model_id, max_new_tokens=2048, temperature=0.3, huggingfacehub_api_token=key
-)
-
-chat_model = ChatHuggingFace(llm=llm_client)
+try:
+    # Client
+    llm_client = HuggingFaceEndpoint(
+        repo_id=model_id,
+        max_new_tokens=2048,
+        temperature=0.3,
+        huggingfacehub_api_token=key,
+    )
+    chat_model = ChatHuggingFace(llm=llm_client)
+    logging.info(f"LLM Model {model_id} initialized successfully.")
+except Exception as e:
+    logging.error("Failed to initialize LLM Model.", exc_info=True)
+    raise e
 
 # Template
 template_generation = """
@@ -83,3 +90,4 @@ overall_chain = (
         review=review_chain
     )  # Runs review_chain using 'quiz' from prev step
 )
+logging.info("LangChain chains initialized successfully.")

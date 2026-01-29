@@ -1,0 +1,117 @@
+[2026-01-29 18:28:41,624] 18 root - INFO - Environment variables loaded in MCQGenerator.
+[2026-01-29 18:28:41,835] 35 root - INFO - LLM Model Qwen/Qwen2.5-72B-Instruct initialized successfully.
+[2026-01-29 18:28:41,836] 93 root - INFO - LangChain chains initialized successfully.
+[2026-01-29 18:28:41,837] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:28:41,837] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:28:52,344] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:28:52,357] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:28:52,360] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:28:52,361] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:28:52,440] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:28:52,441] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:28:52,441] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:31:04,892] 66 root - ERROR - Error during Chain execution
+Traceback (most recent call last):
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1375, in getresponse
+    response.begin()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\util\retry.py", line 490, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='router.huggingface.co', port=443): Read timed out. (read timeout=120)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\StreamlitAPP.py", line 51, in <module>
+    result = overall_chain.invoke(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 3151, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\passthrough.py", line 507, in invoke
+    return self._call_with_config(self._invoke, input, config, **kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 2058, in _call_with_config
+    context.run(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\config.py", line 435, in call_func_with_variable_args
+    return func(input, **kwargs)  # type: ignore[call-arg]
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\passthrough.py", line 493, in _invoke
+    **self.mapper.invoke(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 3875, in invoke
+    output = {
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 3876, in <dictcomp>
+    key: future.result()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 458, in result
+    return self.__get_result()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\User\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 3859, in _invoke_step
+    return context.run(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\runnables\base.py", line 3151, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\language_models\chat_models.py", line 402, in invoke
+    self.generate_prompt(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\language_models\chat_models.py", line 1121, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\language_models\chat_models.py", line 931, in generate
+    self._generate_with_cache(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_core\language_models\chat_models.py", line 1233, in _generate_with_cache
+    result = self._generate(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\langchain_huggingface\chat_models\huggingface.py", line 750, in _generate
+    answer = self.llm.client.chat_completion(messages=message_dicts, **params)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\huggingface_hub\inference\_client.py", line 915, in chat_completion
+    data = self._inner_post(request_parameters, stream=stream)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\huggingface_hub\inference\_client.py", line 260, in _inner_post
+    response = get_session().post(
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\huggingface_hub\utils\_http.py", line 95, in send
+    return super().send(request, *args, **kwargs)
+  File "C:\Hiral\Projects\python randoms\GenAI_Practice\project1\.venv\lib\site-packages\requests\adapters.py", line 690, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: (ReadTimeoutError("HTTPSConnectionPool(host='router.huggingface.co', port=443): Read timed out. (read timeout=120)"), '(Request ID: 360f8d6d-bf18-4dce-b776-80f02c89ef21)')
+[2026-01-29 18:31:49,082] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:31:49,082] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:31:49,086] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:31:49,086] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:31:49,179] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:31:49,179] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:31:49,179] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:32:06,267] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'input_tokens': 3001, 'total_tokens': 3554, 'output_tokens': 553}}
+[2026-01-29 18:32:06,267] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:32:06,267] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:32:06,267] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:32:06,273] 81 root - INFO - Results displayed to user successfully.

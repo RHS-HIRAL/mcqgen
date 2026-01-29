@@ -1,0 +1,79 @@
+[2026-01-29 18:33:52,630] 18 root - INFO - Environment variables loaded in MCQGenerator.
+[2026-01-29 18:33:52,840] 35 root - INFO - LLM Model Qwen/Qwen2.5-72B-Instruct initialized successfully.
+[2026-01-29 18:33:52,842] 93 root - INFO - LangChain chains initialized successfully.
+[2026-01-29 18:33:52,842] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:33:52,843] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:35:01,433] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:35:01,447] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:35:01,451] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:35:01,451] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:35:01,620] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:35:01,621] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:35:01,621] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:35:22,748] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 641, 'total_tokens': 6428, 'input_tokens': 5787}}
+[2026-01-29 18:35:22,748] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:35:22,748] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:35:22,748] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:35:22,753] 81 root - INFO - Results displayed to user successfully.
+[2026-01-29 18:38:28,000] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:38:28,000] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:38:28,004] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:38:28,005] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:38:28,174] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:38:28,174] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:38:28,174] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:39:14,075] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 1247, 'total_tokens': 7307, 'input_tokens': 6060}}
+[2026-01-29 18:39:14,075] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:39:14,075] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:39:14,075] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:39:14,078] 81 root - INFO - Results displayed to user successfully.
+[2026-01-29 18:42:20,856] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:42:20,857] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:42:20,860] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:42:20,861] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:42:21,041] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:42:21,041] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:42:21,041] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:43:02,098] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 1427, 'total_tokens': 7541, 'input_tokens': 6114}}
+[2026-01-29 18:43:02,098] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:43:02,099] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:43:02,099] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:43:02,101] 81 root - INFO - Results displayed to user successfully.
+[2026-01-29 18:43:23,973] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:43:23,973] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:43:23,976] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:43:23,976] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:43:24,172] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:43:24,172] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:43:24,172] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:43:50,981] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 578, 'total_tokens': 6330, 'input_tokens': 5752}}
+[2026-01-29 18:43:50,981] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:43:50,981] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:43:50,981] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:43:50,983] 81 root - INFO - Results displayed to user successfully.
+[2026-01-29 18:44:04,248] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:44:04,248] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:44:04,252] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:44:04,253] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:44:04,439] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:44:04,439] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:44:04,439] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:44:26,222] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 504, 'total_tokens': 6252, 'input_tokens': 5748}}
+[2026-01-29 18:44:26,223] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:44:26,223] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:44:26,223] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:44:26,226] 81 root - INFO - Results displayed to user successfully.
+[2026-01-29 18:49:33,384] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:49:33,385] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:49:48,107] 14 root - INFO - Streamlit App Started. Environment variables loaded in StreamlitAPP.py.
+[2026-01-29 18:49:48,107] 20 root - INFO - Response JSON template loaded.
+[2026-01-29 18:49:48,110] 43 root - INFO - User inputs received. Starting process...
+[2026-01-29 18:49:48,111] 9 root - INFO - Started reading the uploaded file...
+[2026-01-29 18:49:48,288] 17 root - INFO - PDF file read successfully.
+[2026-01-29 18:49:48,289] 47 root - INFO - Input text extracted from file.
+[2026-01-29 18:49:48,289] 50 root - INFO - Invoking LangChain Process...
+[2026-01-29 18:50:19,839] 60 root - INFO - Chain execution completed. Token metadata: {'Qwen/Qwen2.5-72B-Instruct': {'output_tokens': 992, 'total_tokens': 6863, 'input_tokens': 5871}}
+[2026-01-29 18:50:19,839] 72 root - INFO - Processing result dictionary.
+[2026-01-29 18:50:19,839] 37 root - INFO - Formatting quiz data for table display...
+[2026-01-29 18:50:19,839] 49 root - INFO - Table data formatted successfully.
+[2026-01-29 18:50:19,843] 81 root - INFO - Results displayed to user successfully.
