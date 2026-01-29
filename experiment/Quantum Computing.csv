@@ -1,0 +1,6 @@
+MCQ,Choices,Correct
+Which principle of quantum mechanics allows a qubit to exist in multiple states simultaneously?,A: Entanglement | B: Superposition | C: Decoherence | D: Interference,B
+What happens when a quantum system is measured?,A: The system remains in a state of superposition. | B: The system's state collapses into a binary state. | C: The system becomes more entangled. | D: The system's interference patterns amplify.,B
+"Which phenomenon describes the ability of qubits to correlate their state with other qubits, such that measuring one qubit provides information about the others?",A: Superposition | B: Entanglement | C: Decoherence | D: Interference,B
+"In quantum computing, what term describes the process where a system in a quantum state collapses into a non-quantum state due to environmental factors?",A: Superposition | B: Entanglement | C: Decoherence | D: Interference,C
+How does interference in quantum computing affect the probabilities of outcomes?,A: It has no effect on the probabilities. | B: It amplifies or cancels out probabilities based on wave interactions. | C: It always increases the probabilities of all outcomes. | D: It always decreases the probabilities of all outcomes.,B
