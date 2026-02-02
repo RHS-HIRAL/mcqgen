@@ -1,6 +1,4 @@
-import os
 import PyPDF2
-import json
 import traceback
 from src.mcqgenerator.logger import logging
 

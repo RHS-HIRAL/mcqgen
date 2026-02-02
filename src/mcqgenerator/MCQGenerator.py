@@ -1,9 +1,5 @@
 import os
-import json
-import traceback
-import pandas as pd
 from dotenv import load_dotenv
-from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 
 # from huggingface_hub import InferenceClient
@@ -11,7 +7,6 @@ from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
-from langchain_core.callbacks import get_usage_metadata_callback
 
 # Load environment variables from the .env file
 load_dotenv()
